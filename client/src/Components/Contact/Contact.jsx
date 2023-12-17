@@ -16,7 +16,7 @@ const Contact = () => {
 
   const contactfunc = async () => {
     try {
-      const userInfo = await fetch("http://localhost:8000/contact", {
+      const userInfo = await fetch("https://portfolio-backend-a09y.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
