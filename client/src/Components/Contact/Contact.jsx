@@ -6,7 +6,6 @@ import { SiGeeksforgeeks } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import axios from "axios";
 
 const Contact = () => {
   const [user, setUser] = useState([]);
