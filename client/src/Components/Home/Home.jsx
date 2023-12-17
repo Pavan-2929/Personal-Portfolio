@@ -1,7 +1,6 @@
 import React from 'react'
 import Developer from '../../assets/Developer.png'
 import './Home.css'
-import ReactTyped from 'react-typed'
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
 import { SiGeeksforgeeks } from 'react-icons/si';
@@ -18,15 +17,7 @@ const Home = () => {
         <h2>Hello, It's Me,</h2>
         <h1>Pavan Kapadiya</h1>
         <span className='typing'>
-          <p>I'm a &nbsp;</p><ReactTyped className='react-typed'
-            strings={[
-              'Front-end Developer',
-              'React Developer'
-            ]}
-            typeSpeed={70}
-            backSpeed={50}
-            loop
-          />
+          <p>I'm a MERN Stack Developer</p>
         </span>
         <p className='home-text'>Welcome to my website! Please take your time to explore my portfolio and discover all of my projects. If you find something that interests you, don't hesitate to reach out to me. I'm excited to connect with you!</p>
 
