@@ -1,0 +1,170 @@
+.contact-container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96vw;
+    height: 100%;
+    background-color: #1a1818;
+    margin: 4rem auto;
+    box-shadow: 0 0 20px #c0c0c0;
+    border-radius: 10px;
+}
+
+.c-left{
+    width: 45vw;
+    background-color: rgb(69, 64, 64);
+    margin: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #c0c0c0;
+}
+
+.c-heading{
+    text-align: center;
+}
+
+.c-heading h1{
+    font-size: 3rem;
+    animation: colorChange 2s infinite; 
+    text-shadow: 0 0 5px #c0c0c0;
+    margin-top: 2rem;
+}
+
+.c-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.c-inputs input{
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.6rem;
+    border: none;
+    margin: 1rem auto;
+    background-color: rgb(45, 42, 42);
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: #c0c0c0;
+}
+
+.c-inputs textarea{
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.6rem;
+    border: none;
+    margin: 1rem auto;
+    background-color: rgb(45, 42, 42);
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: #c0c0c0;
+    resize: none;
+}
+
+.c-inputs input:focus, .c-inputs textarea:focus{
+    box-shadow: 0 0 5px #0ef;
+}
+
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.s-btn{
+    background-color: rgb(45, 42, 42);
+}
+
+.c-right{
+    margin: 3rem;
+}
+
+.media-heading h1{
+    font-size: 2rem;
+    color: #0ef;
+}
+
+.email-heading h1{
+    color: #0ef;
+    font-size: 2rem;
+    margin: 3rem 0 2rem 0;
+}
+
+.media-a{
+    display: flex;
+    text-decoration: none;
+    height:3rem;
+    align-items: center;
+}
+
+.mail-icon{
+    margin-right: 8px;
+}
+
+.media-a h2{
+    color: #c0c0c0;
+}
+
+.location-heading h1{
+    color: #0ef;
+    font-size: 2rem;
+    margin: 3rem 0 2rem 0;
+}
+
+@media screen and (max-width: 1040px){
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .c-left{
+        width: 100%;
+        margin: 0;
+    }
+
+    .c-inputs input, .c-inputs textarea{
+        width: 90%;
+    }
+
+    .c-right{
+        margin: 8px;
+        margin-top: 1.5rem;
+    }
+
+    .responsive-icons{
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .location{
+        margin-bottom: 2rem;
+    }
+
+    .media-heading h1, .email h1, .location-heading h1{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .email .social-i{
+        margin: 0;
+    }
+
+    .responsive-icons h2{
+        text-align: center;
+    }
+
+    .c-right .contact-i{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+}

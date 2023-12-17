@@ -1,0 +1,126 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+}
+
+.nav-heading h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #c0c0c0;
+}
+
+.nav-elements ul li {
+  list-style: none;
+}
+.nav-menu li {
+  text-decoration: none;
+  color: #c0c0c0;
+  font-size: 1.5rem;
+  margin-left: 4rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+}
+
+.nav-menu li:hover{
+    color: #0ef;
+    background: none;
+    text-shadow: 0 0 20px #0ef;
+}
+
+.nav-menu li:hover{
+    letter-spacing: 1.2px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.cv {
+  background-color: #0c0c0c;
+  color: white;
+  border: 1px solid white;
+  letter-spacing: 2px;
+  font-weight: 900;
+  transition: 0.5s;
+  position: relative;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.cv:hover {
+  color: #0ef;
+  box-shadow: 0 0 35px #0ef;
+  letter-spacing: 2.5px;
+  border: 0.1px solid #0ef;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-icon div{
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.2rem;
+  background: #c0c0c0;
+  transition: 0.3s ease-in;
+  transform-origin: center;
+}
+
+@media screen and (max-width: 1040px) {
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .nav-icon:hover .bar{
+    background: #0ef;
+    box-shadow: 0 0 15px #0ef;
+
+  }
+
+  .btn span{
+    display: none;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #333; 
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}

@@ -1,0 +1,64 @@
+.h-container{
+    width: 86rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(69, 64, 64);
+    border-radius: 10px;
+    box-shadow: 0 0 12px #c0c0c0;
+    margin-bottom: 5rem;
+}
+
+.h-heading{
+    font-size: 1rem;
+    animation: colorChange 2s infinite; 
+    text-shadow: 0 0 5px #c0c0c0;
+}
+
+.h-heading h1{
+    text-align: center;
+}
+
+.h-title{
+    color: #0ef;
+}
+
+.h-content{
+    margin: 0rem;
+    padding: 2rem;
+}
+
+.link-btns a{
+    color: #c0c0c0;
+    font-size: 15px;
+    margin-right: 2rem;
+    font-weight: 700;
+    text-shadow: 0 0 1px #c0c0c0;
+    text-decoration: none;
+}
+
+.link-btns{
+    margin-top: 1rem;
+}
+
+.link-btns .link-btn{
+    padding: 7px;
+}
+
+.h-details h3{
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 1040px){
+
+    .h-container{
+        width: 88vw;
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .h-content{
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
